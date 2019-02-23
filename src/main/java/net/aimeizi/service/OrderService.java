@@ -29,7 +29,7 @@ public interface OrderService {
     void addOrders(List<Order> orders);
 
     /**
-     * 批量批量用户的订单状态
+     * 批量修改用户的订单状态
      *
      * @param userIds
      */

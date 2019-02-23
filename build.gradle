@@ -1,30 +1,22 @@
 apply plugin: 'java'
 apply plugin: 'application'
 
-targetCompatibility = 1.7
-sourceCompatibility = 1.7
+targetCompatibility = 1.8
+sourceCompatibility = 1.8
 
 [compileJava, compileTestJava].each() {
     it.options.compilerArgs += ["-Xlint:unchecked", "-Xlint:deprecation", "-Xlint:-options"]
     it.options.encoding = "UTF-8"
 }
 
-buildscript {
-    repositories {
-        mavenLocal()
-        maven {
-            url 'http://maven.oschina.net/content/groups/public/'
-        }
-        mavenCentral()
-    }
-}
-
 repositories {
     mavenLocal()
-    maven {
-        url 'http://maven.oschina.net/content/groups/public/'
-    }
+    maven { url "http://maven.aliyun.com/nexus/content/groups/public/"}
     mavenCentral()
+    jcenter()
+    maven { url "https://repo.spring.io/snapshot" }
+    maven { url "https://repo.spring.io/milestone" }
+    maven { url 'http://oss.jfrog.org/artifactory/oss-snapshot-local/' }  //ת��pdfʹ��
 }
 
 dependencies {
