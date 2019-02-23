@@ -1,3 +1,5 @@
+引自[](https://github.com/ameizi/sharding-jdbc-sample.git)
+
 ### 当当[sharding-jdbc](https://github.com/dangdangdotcom/sharding-jdbc)的代码示例
 
 -------
